@@ -14,7 +14,12 @@ class HelloController extends Controller
     public function index()
     {
         //
-        return view('hello');
+        $name = 'yen';
+        $age = 21;
+        $address = 'VN';
+        $email = '98@yenngu.com';
+        return view('hello', ['ten' => $name, 'tuoi' => $age, 'diachi' => $address, 'email' => $email])
+        ;
     }
 
     /**
