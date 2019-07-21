@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -14,3 +15,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('input','SumController@sumView')->name('sum-view');
+Route::get('student','StudentController@index')->name('student');
+Route::get('classes','ClassRoomController@index')->name('classes');
+Route::post('sum','SumController@index')->name('sum');
